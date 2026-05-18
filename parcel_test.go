@@ -155,7 +155,6 @@ func TestGetByClient(t *testing.T) {
 	// check
 	for _, parcel := range storedParcels {
 		expected := parcelMap[parcel.Number]
-		require.NoError(t, err)
 		require.Equal(t, expected, parcel)
 		// в parcelMap лежат добавленные посылки, ключ - идентификатор посылки, значение - сама посылка
 		// убедитесь, что все посылки из storedParcels есть в parcelMap
