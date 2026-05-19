@@ -42,7 +42,7 @@ func (s ParcelStore) Get(number int) (Parcel, error) {
 		return Parcel{}, err
 	}
 
-	return Parcel{}, nil
+	return p, nil
 }
 
 func (s ParcelStore) GetByClient(client int) ([]Parcel, error) {
